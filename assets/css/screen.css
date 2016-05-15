@@ -591,6 +591,14 @@ body.nav-closed .site-wrapper header .top-nav, body.nav-closed .site-wrapper foo
    ========================================================================== */
 
 /* Big cover image on the home page */
+.hero {
+    height: 180px;
+    background: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-header {
     position: relative;
     display: table;
@@ -732,7 +740,7 @@ body.nav-opened .nav {
     font-size: 1.2rem;
     vertical-align: bottom;
     color: #B8B8B8;
-    content: counter(item, lower-roman);
+    content: counter(item);
     counter-increment: item;
 }
 .nav li {
@@ -989,6 +997,7 @@ body.nav-opened .nav {
 .no-cover .top-nav {
     height: 70px;
     line-height: 70px;
+    overflow-y: hidden;
     color: #fff;
     background: #1F2026;
     padding: 0 50px;
@@ -1001,7 +1010,7 @@ body.nav-opened .nav {
 }
 
 .blog-info .blog-title {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 a.blog-home {
