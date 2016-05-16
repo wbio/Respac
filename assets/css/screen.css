@@ -760,13 +760,14 @@ body.nav-opened .nav {
     font-size: 1.2rem;
     vertical-align: bottom;
     color: #B8B8B8;
-    content: counter(item);
+    /*content: counter(item);*/
     counter-increment: item;
 }
 .nav li {
     margin: 0;
 }
 .nav li a {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     line-height: 1.4;
     font-size: 1.4rem;
@@ -778,7 +779,7 @@ body.nav-opened .nav {
 }
 .nav li a:after {
     display: inline-block;
-    content: " .......................................................";
+    /*content: " .......................................................";*/
     color: rgba(255,255,255,0.2);
     margin-left: 5px;
 }
