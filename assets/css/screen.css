@@ -305,7 +305,7 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em 0;
+    margin: 1.75em 0 1.75em -0.4em;
     padding: 0 0 0 1.75em;
     border-left: #E85254 0.4em solid;
 }
@@ -1158,6 +1158,8 @@ a.blog-home {
 
 body:not(.post-template) .post-title {
     font-size: 3.6rem;
+    border-bottom: 3px solid #E85254;
+    padding-bottom: 4px;
 }
 
 .post-title a {
