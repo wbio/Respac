@@ -1009,6 +1009,15 @@ body.nav-opened .nav {
     float: left;
 }
 
+.blog-info .title-section {
+    float: left;
+}
+
+.blog-info .nav-section {
+    float: right;
+    margin-left: 60px;
+}
+
 .blog-info .blog-title {
     font-weight: 400;
 }
@@ -1022,6 +1031,18 @@ a.blog-home {
 
 .blog-info .blog-description {
     opacity: 0.7;
+}
+
+.nav-item {
+    float: left;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background: #48494f;
 }
 
 /* Add subtle load-in animation for content on the home page */
@@ -1080,8 +1101,27 @@ body:not(.post-template) .post-title {
     line-height: 1.7em;
 }
 
-.read-more {
+p.read-more {
+    margin-top: 20px;
+}
+
+.read-more a {
     text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    border: 1px solid #e4e4e4;
+    display: inline;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #767676;
+    transition: all 0.2s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+}
+
+.read-more a:hover {
+    background: #E85254;
+    border: 1px solid #E85254;
+    color: #fff;
 }
 
 .post-meta {
