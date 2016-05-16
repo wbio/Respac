@@ -927,7 +927,7 @@ body.nav-opened .nav {
     outline: 0;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
     .menu-button {
         display: none;
     }
@@ -1035,11 +1035,11 @@ body.nav-opened .nav {
 }
 
 .nav-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     .nav-content {
         margin-left: 5%;
     }
@@ -1101,7 +1101,7 @@ a.blog-home {
     margin-right: 8px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .nav-section, .subscribe {
         display: none;
     }
@@ -2042,7 +2042,7 @@ p.read-more {
    12. Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 
     .main-header {
         margin-bottom: 15px;
