@@ -599,6 +599,7 @@ body.nav-closed header .main-nav, body.nav-closed .site-wrapper footer section.c
     align-items: center;
     margin-bottom: 90px;
     font-family: "Open Sans", sans-serif;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
 
 .avatar {
@@ -659,7 +660,7 @@ body.nav-opened .nav-cover {
     z-index: 12;
     width: 240px;
     opacity: 0;
-    background: #294062;
+    background: #2a2c33;
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -1022,7 +1023,7 @@ body.nav-opened .nav {
     line-height: 54px;
     overflow-y: hidden;
     color: #fff;
-    background: #294062;
+    background: #2a2c33;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
@@ -1046,6 +1047,8 @@ body.nav-opened .nav {
 
 .no-cover .blog-info {
     float: left;
+    position: relative;
+    width: 100%;
 }
 
 .blog-info .title-section {
@@ -1053,7 +1056,7 @@ body.nav-opened .nav {
 }
 
 .blog-info .nav-section {
-    float: right;
+    float: left;
     margin-left: 40px;
 }
 
@@ -1084,11 +1087,22 @@ a.blog-home {
 }
 
 .nav-item:hover {
-    background: #243356;
+    background: #121316;
+}
+
+.subscribe {
+    position: absolute;
+    right: 0;
+}
+
+.subscribe .nav-item:before {
+    content: "\f601";
+    font-family: "casper-icons";
+    margin-right: 8px;
 }
 
 @media (max-width: 500px) {
-    .nav-section {
+    .nav-section, .subscribe {
         display: none;
     }
 }
