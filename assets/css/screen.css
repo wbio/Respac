@@ -1065,8 +1065,11 @@ body.nav-opened .nav {
 }
 
 .blog-info .blog-title {
+    display: inline-block;
     font-weight: 400;
     text-transform: lowercase;
+    padding: 0 10px;
+    margin-left: -10px;
 }
 
 a.blog-home {
