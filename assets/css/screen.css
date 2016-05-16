@@ -191,7 +191,6 @@ body {
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
-    text-rendering: geometricPrecision;
 }
 
 ::-moz-selection {
@@ -552,7 +551,7 @@ button {
 .site-wrapper {
     position: relative;
     z-index: 10;
-    min-height: 100%;
+    margin-top: 70px;
     background: #fff;
     -webkit-transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
@@ -567,15 +566,15 @@ body.nav-opened .site-wrapper {
             transition: transform 0.3s ease;
 }
 
-body.nav-opened .site-wrapper header .top-nav, body.nav-opened .site-wrapper footer section.copyright {
-    -webkit-transform: translate3D(240px, 0, 0);
-    -ms-transform: translate3D(240px, 0, 0);
-    transform: translate3D(240px, 0, 0);
+body.nav-opened header .main-nav, body.nav-opened .site-wrapper footer section.copyright {
+    -webkit-transform: translate3D(-240px, 0, 0);
+    -ms-transform: translate3D(-240px, 0, 0);
+    transform: translate3D(-240px, 0, 0);
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
 }
 
-body.nav-closed .site-wrapper header .top-nav, body.nav-closed .site-wrapper footer section.copyright {
+body.nav-closed header .main-nav, body.nav-closed .site-wrapper footer section.copyright {
     -webkit-transform: translate3D(0px, 0, 0);
     -ms-transform: translate3D(0px, 0, 0);
     transform: translate3D(0px, 0, 0);
@@ -641,10 +640,10 @@ body.nav-opened .nav-cover {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 5;
+    z-index: 12;
     width: 240px;
     opacity: 0;
-    background: #1F2026;
+    background: #294062;
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -655,9 +654,9 @@ body.nav-opened .nav-cover {
 }
 
 body.nav-closed .nav {
-    -webkit-transform: translate3D(97px, 0, 0);
-        -ms-transform: translate3D(97px, 0, 0);
-            transform: translate3D(97px, 0, 0);
+    -webkit-transform: translate3D(240px, 0, 0);
+        -ms-transform: translate3D(240px, 0, 0);
+            transform: translate3D(240px, 0, 0);
 }
 
 body.nav-opened .nav {
@@ -911,6 +910,12 @@ body.nav-opened .nav {
     outline: 0;
 }
 
+@media (min-width: 500px) {
+    .menu-button {
+        display: none;
+    }
+}
+
 /* When the navigation is closed */
 .nav-closed .menu-button {
     color: #fff;
@@ -938,6 +943,7 @@ body.nav-opened .nav {
         -ms-transform: translate3D(60px, 0, 0);
             transform: translate3D(60px, 0, 0);
     transition: all 0.3s ease;
+    z-index: 11;
 }
 
 .nav-opened .menu-button .word {
@@ -953,8 +959,9 @@ body.nav-opened .nav {
     height: 70px;
     border: none;
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
-    padding: 0 50px 0 50px;
+    padding: 0 5% 0 5%;
     margin-bottom: 0;
+    z-index: 12;
 }
 .no-cover .main-nav.overlay {
     background: none;
@@ -999,10 +1006,26 @@ body.nav-opened .nav {
     line-height: 70px;
     overflow-y: hidden;
     color: #fff;
-    background: #1F2026;
-    padding: 0 50px;
+    background: #294062;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+    .nav-content {
+        margin-left: 5%;
+    }
 }
 
 .no-cover .blog-info {
@@ -1036,13 +1059,20 @@ a.blog-home {
 .nav-item {
     float: left;
     color: #fff;
+    font-size: 14px;
     font-weight: 300;
     padding: 0 10px;
     transition: all 0.3s ease;
 }
 
 .nav-item:hover {
-    background: #48494f;
+    background: #243356;
+}
+
+@media (max-width: 500px) {
+    .nav-item {
+        display: none;
+    }
 }
 
 /* Add subtle load-in animation for content on the home page */
@@ -1235,7 +1265,7 @@ p.read-more {
 
 /* Tweak the .post wrapper style */
 .post-template .post {
-    margin-top: 0;
+    margin-top: 40px;
     border-bottom: none;
     padding-bottom: 0;
 }
@@ -2056,7 +2086,7 @@ p.read-more {
     }
 
     .nav ul {
-        padding: 60px 9% 5%;
+        padding: 65px 9% 5%;
     }
 
     .inner,
