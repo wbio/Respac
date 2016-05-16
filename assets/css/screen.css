@@ -305,9 +305,9 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
+    margin: 1.75em 0 1.75em 0;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    border-left: #E85254 0.4em solid;
 }
 
 blockquote p {
@@ -510,6 +510,10 @@ button {
     border-radius: 0.3rem;
     border: rgba(0,0,0,0.05) 0.1em solid;
     background: #5ba4e5;
+}
+
+pre[class*="language-"] {
+    margin: 12px 0 35px;
 }
 
 
