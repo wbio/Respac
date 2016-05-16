@@ -596,6 +596,20 @@ body.nav-closed header .main-nav, body.nav-closed .site-wrapper footer section.c
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 90px;
+}
+
+.avatar {
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        border-radius: 100px;
+        float: none;
+        position: absolute;
+        top: 128px;
+        left: 50%;
+        margin-left: -50px;
+        background-size: contain;
 }
 
 .main-header {
@@ -1038,7 +1052,7 @@ body.nav-opened .nav {
 
 .blog-info .nav-section {
     float: right;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .blog-info .blog-title {
@@ -1059,10 +1073,11 @@ a.blog-home {
 .nav-item {
     float: left;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     padding: 0 10px;
     transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
 .nav-item:hover {
