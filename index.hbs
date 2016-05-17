@@ -5,7 +5,6 @@
 {{#if @blog.cover}}
 	<div class="hero" style="background-image: url({{@blog.cover}})">
 		<span>{{@blog.description}}</span>
-		<div class="avatar"></div>
 		{{#get "users" id="1"}}
 			{{#foreach users}}
 				{{#if image}}
