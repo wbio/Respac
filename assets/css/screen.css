@@ -116,7 +116,7 @@ td, th{ padding: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "museo-sans", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -173,6 +173,14 @@ td, th{ padding: 0; }
    2. General - Setting up some base styles
    ========================================================================== */
 
+/* Prevent the FOUT */
+.wf-loading {
+    visibility: hidden;
+}
+.wf-active {
+    visibility: visible;
+}
+
 html {
     height: 100%;
     max-height: 100%;
@@ -183,7 +191,8 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 100;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -209,7 +218,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -445,7 +454,7 @@ textarea, select, input {
     padding: 6px 9px;
     margin: 0 0 5px 0;
     outline: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'museo-sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.4em;
@@ -499,7 +508,7 @@ button {
     outline: none;
     text-decoration: none;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'museo-sans', sans-serif;
     font-size: 11px; // Hack because Firefox sucks ass.
     line-height: 13px; // Hack because Firefox sucks ass.
     font-weight: 300;
@@ -602,7 +611,7 @@ body.nav-closed header .main-nav, body.nav-closed .site-wrapper footer section.c
     justify-content: center;
     align-items: center;
     margin-bottom: 90px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
 
@@ -650,7 +659,7 @@ body.nav-closed header .main-nav, body.nav-closed .site-wrapper footer section.c
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'museo-sans', sans-serif;
 }
 
 /* Navigation */
@@ -774,7 +783,7 @@ body.nav-opened .nav {
     margin: 0;
 }
 .nav li a {
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     text-decoration: none;
     line-height: 1.4;
     font-size: 1.4rem;
@@ -826,7 +835,7 @@ body.nav-opened .nav {
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -1002,7 +1011,7 @@ body.nav-opened .nav {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     color: #fff;
 }
 
@@ -1011,7 +1020,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "museo-sans", serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -1037,7 +1046,7 @@ body.nav-opened .nav {
     color: #fff;
     background: #2a2c33;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
     z-index: 11;
     position: fixed;
@@ -1187,7 +1196,7 @@ p.read-more {
 .read-more a {
     text-decoration: none;
     font-size: 14px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-weight: 300;
     border: 1px solid #e4e4e4;
     display: inline;
@@ -1206,7 +1215,7 @@ p.read-more {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1555,7 +1564,7 @@ p.read-more {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: "museo-sans", serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1641,7 +1650,7 @@ p.read-more {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1733,7 +1742,7 @@ p.read-more {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1862,7 +1871,7 @@ p.read-more {
 }
 
 .gh-subscribe-rss {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'museo-sans', sans-serif;
     font-size: 1.2rem;
     line-height: 1.4em;
 }
@@ -1875,7 +1884,7 @@ p.read-more {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 1rem 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
